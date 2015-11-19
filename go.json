@@ -32,5 +32,20 @@
 			"$2"
 		],
 		"description": "if err != nil {}"
+	},
+	"package main": {
+		"prefix": "pkgmain",
+		"body": [
+			"package main",
+			"",
+			"import (",
+			"	\"fmt\"",
+			")",
+			"",
+			"func main() {",
+			"	$1",
+			"}"
+		],
+		"description": "package main"
 	}
 }
