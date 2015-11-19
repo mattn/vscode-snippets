@@ -1,0 +1,36 @@
+{
+	 "log.Fatal": {
+		"prefix": "logf",
+		"body": [
+			"log.Fatal(\"${1:message}\");",
+			"$2"
+		],
+		"description": "Log output to console and exit"
+	},
+	"log.Println": {
+		"prefix": "logp",
+		"body": [
+			"log.Println(\"$1\");",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"fmt.Println": {
+		"prefix": "fmtp",
+		"body": [
+			"fmt.Println(\"$1\");",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"if err not equal nil": {
+		"prefix": "iferr",
+		"body": [
+			"if err != nil {",
+			"	return $1err",
+			"}",
+			"$2"
+		],
+		"description": "if err != nil {}"
+	}
+}
